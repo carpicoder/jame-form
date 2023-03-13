@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-bg: #ecf2f7;
+    
+    --clr-light: #fefdff;
+    --clr-white: #ffffff;
+
+    --clr-gray: #a0aec0;
+    
+    --clr-dark: #3e455d;
+    --clr-black: #000000;
+
+    --clr-percentage: #0dcd33;
+
+    --clr-modelo-1: #7c62e8;
+
+    --clr-green: #25cd89;
+    --clr-yellow: #ead365;
+    --clr-red: #e04d4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--clr-dark);
+}
+
+body {
+    background-color: var(--clr-white);
+    padding-block: 3rem;
+}
+
+.container {
+    max-width: 1140px;
+    padding-inline: 1.5rem;
+    margin: 0 auto;
+}
+
+.form.modelo-1 {
+    --clr-modelo: var(--clr-modelo-1);
+    --clr-text: var(--clr-light);
+    --clr-gray: #d4d4d4;
+}
+
+.form {
+    background-color: var(--clr-bg);
+    background-color: var(--clr-modelo);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.form h1, .form h2, .form h3, .form h4, .form h5, .form h6, .form p {
+    color: var(--clr-text);
+}
+
+.form-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 1px solid var(--clr-gray);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.modelo {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.modelo-titulo {
+    font-weight: 700;
+    color: var(--clr-text);
+    font-size: 1.15rem;
+}
+
+.principios {
+    font-size: .85rem;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.principios-numero {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-white);
+    color: var(--clr-modelo);
+    border-radius: .5rem;
+}
+
+.principios-titulo {
+    font-weight: 700;
+    color: var(--clr-text);
+    font-size: 1rem;
+}
+
+.form-header-percentage {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.percentage-container {
+    height: 1rem;
+    background-color: var(--clr-light);
+    flex-grow: 1;
+    border-radius: 100vmax;
+    overflow: hidden;
+}
+
+.percentage-bar {
+    width: 80%;
+    height: 100%;
+    background-color: var(--clr-percentage);
+    transition: .2s;
+    transition-timing-function: ease-in;
+}
+
+.comportamientos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.comportamientos > input[type=radio] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.comportamientos > input[type=radio] + label {
+    padding: 1.5rem;
+    background-color: var(--clr-white);
+    border-radius: .5rem;
+    cursor: pointer;
+    color: var(--clr-dark);
+    transition: .2s;
+}
+
+.comportamientos > input[type=radio] + label:hover {
+    padding: 1.5rem;
+    background-color: var(--clr-gray);
+    cursor: pointer;
+}
+
+.comportamientos > input[type=radio].rojo:checked + label {
+    background-color: var(--clr-red);
+}
+
+.comportamientos > input[type=radio].amarillo:checked + label {
+    background-color: var(--clr-yellow);
+}
+
+.comportamientos > input[type=radio].verde:checked + label {
+    background-color: var(--clr-green);
+}
+
+.tema {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--clr-text);
+    border-radius: .5rem;
+    color: var(--clr-bg);
+}
+
+.tema textarea {
+    background-color: var(--clr-white);
+    border: 0;
+    border-radius: .5rem;
+    color: var(--clr-black);
+    padding: 1rem;
+    resize: none;
+    flex-grow: 1;
+}
+
+.tema textarea:focus {
+    outline: 0;
+}
+
+.tema textarea::placeholder {
+    transition: .2s;
+}
+
+.tema textarea:focus::placeholder {
+    opacity: .3;
+}
+
+.comportamientos-2 {
+    display: flex;
+    gap: 1rem;
+}
+
+.next-step {
+    border: 0;
+    padding: 0 1.5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .15s;
+    background-color: var(--clr-white);
+    border: 2px solid white;
+}
+
+.next-step:hover {
+    background-color: var(--clr-modelo);
+    color: var(--clr-white);
+}

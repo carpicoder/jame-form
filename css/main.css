@@ -12,6 +12,11 @@
     --clr-green: #25cd89;
     --clr-yellow: #ead365;
     --clr-red: #e04d4d;
+
+    --clr-modelo-1: rgba(125, 98, 232, 0.25);
+    --clr-modelo-2: rgba(232, 98, 98, 0.25);
+    --clr-modelo-3: rgba(232, 158, 98, 0.25);
+    --clr-modelo-4: rgba(152, 232, 98, 0.25);
 }
 
 * {
@@ -25,6 +30,10 @@ body {
     background-color: var(--clr-bg);
     color: var(--clr-text);
     padding-block: 4rem;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -42,6 +51,7 @@ body {
 .title {
     font-size: 1.4rem;
     font-weight: 500;
+    color: var(--clr-black);
 }
 
 .form {
@@ -56,6 +66,27 @@ body {
     grid-template-columns: 4rem 1fr;
     border: 1px solid var(--clr-gray-sec);
     border-radius: 1rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.modelo-1 {
+    background-color: var(--clr-modelo-1);
+}
+
+.modelo-2 {
+    background-color: var(--clr-modelo-2);
+}
+
+.modelo-3 {
+    background-color: var(--clr-modelo-3);
+}
+
+.modelo-4 {
+    background-color: var(--clr-modelo-4);
 }
 
 .modelo {
@@ -68,34 +99,65 @@ body {
     border-radius: 1rem 0 0 1rem;
 }
 
+.modelo-1 .modelo {
+    background-color: var(--clr-modelo-1);
+    color: var(--clr-white);
+}
+
+.modelo-2 .modelo {
+    background-color: var(--clr-modelo-2);
+    color: var(--clr-white);
+}
+
+.modelo-3 .modelo {
+    background-color: var(--clr-modelo-3);
+    color: var(--clr-white);
+}
+
+.modelo-4 .modelo {
+    background-color: var(--clr-modelo-4);
+    color: var(--clr-white);
+}
+
 .modelo h2 {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     writing-mode: vertical-lr;
     transform: rotateZ(180deg);
     line-height: 1;
     position: sticky;
     top: 2rem;
+    text-transform: uppercase;
 }
 
 .steps-group-body {
     padding: 1rem;
+    border-left: 1px solid var(--clr-gray-sec);
 }
+
 
 .principio {
     position: sticky;
     top: 0;
-    background-color: var(--clr-black);
-    color: var(--clr-white);
     padding: .75rem 1rem;
     border-radius: 0 0 .5rem .5rem;
     margin-bottom: 1.5rem;
     border: 1px solid var(--clr-gray-sec);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
 }
+
+/* .principio {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+} */
 
 .principio h3 {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .temas {
@@ -111,7 +173,6 @@ body {
     padding: 1rem;
     border: 1px solid var(--clr-text);
     border-radius: .5rem;
-    background-color: var(--clr-text);
     color: var(--clr-bg);
 }
 
