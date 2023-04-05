@@ -9,12 +9,60 @@
 </head>
 <body>
 
+    <div class="logos-flotantes" id="logos-flotantes">
+        <div class="container">
+            <img src="./img/jame.png" alt="Logo Jame" class="logo-jame">
+            <img src="./img/taho.png" alt="Logo Taho" class="logo-jame">
+        </div>
+    </div>
+
     <div class="container">
         <header class="header">
             <h1 class="title">Autodiagnóstico del modelo de gestión y cultura de excelencia en su organización</h1>
         </header>
         <main>
             <form class="form" method="post">
+
+                <div class="first-step">
+                    <div class="izquierda">
+                        <div class="dato">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="dato">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+                        </div>
+                        <div class="dato">
+                            <label for="cargo">Cargo</label>
+                            <input type="text" id="cargo" name="cargo" placeholder="Cargo">
+                        </div>
+                        <div class="dato">
+                            <label for="empleados">Cantidad de empleados</label>
+                            <input type="number" id="empleados" name="empleados" placeholder="Cantidad de empleados">
+                        </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="dato">
+                            <label for="mision">Misión</label>
+                            <textarea name="mision" id="mision" rows="3" placeholder="Misión"></textarea>
+                        </div>
+                        <div class="dato">
+                            <label for="vision">Visión</label>
+                            <textarea name="vision" id="vision" rows="3" placeholder="Visión"></textarea>
+                        </div>
+                        <div class="dato">
+                            <label for="valores">Valores</label>
+                            <textarea name="valores" id="valores" rows="3" placeholder="Valores"></textarea>
+                        </div>
+                        <div class="dato">
+                            <label for="principios-guia">Principios guía</label>
+                            <textarea name="principios-guia" id="principios-guia" rows="3" placeholder="Principios guía"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="./img/gestion.jpg" class="image-gestion">
 
                 <div class="steps-group modelo-1">
 
@@ -30,7 +78,7 @@
                         </div>
                         <div class="temas">
                             <div class="tema">
-                                <h4>1. Valores y principios guías</h4>
+                                <h4>1.1. Valores y principios guías</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-1-a" name="uno-1" class="rojo">
                                     <label for="uno-1-a">Menos del 50% del personal de la organización entiende las aspiraciones de la organización y comportamientos deseados que representan los valores y principios guía.  La alta dirección no comparte de manera regular las aspiraciones de desempeño y comportamientos esperados a través de una historia de cambio que explique el por que del proceso de transformación que se quiere transitar.</label>
@@ -42,7 +90,7 @@
                                 <textarea name="uno-1-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>2. Propósito compartido</h4>
+                                <h4>1.2. Propósito compartido</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-2-a" name="uno-2" class="rojo">
                                     <label for="uno-2-a">Los líderes no enseñan, dan coaching, promueven ni discuten de manera regular los beneficios de los principios de excelencia operacional y como estos deberían estar alineados en los sistemas y herramientas de gestión.</label>
@@ -54,7 +102,7 @@
                                 <textarea name="uno-2-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>3. Liderar con el ejemplo</h4>
+                                <h4>1.3. Liderar con el ejemplo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-3-a" name="uno-3" class="rojo">
                                     <label for="uno-3-a">Los líderes no comparten de manera regular sus experiencias personales en la adopción y práctica efectiva de los principios con la organización para promover la experimentación y aprendizaje organizacional.</label>
@@ -66,7 +114,7 @@
                                 <textarea name="uno-3-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>4. Búsqueda de la voz del cliente</h4>
+                                <h4>1.4. Búsqueda de la voz del cliente</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-4-a" name="uno-4" class="rojo">
                                     <label for="uno-4-a">Rara vez se busca la retroalimentación del cliente y cuando se hace no se identifican las variables principales de experiencia y satisfacción.</label>
@@ -78,7 +126,7 @@
                                 <textarea name="uno-4-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>5. Voz del cliente - Discutir la retroalimentación</h4>
+                                <h4>1.5. Voz del cliente - Discutir la retroalimentación</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-5-a" name="uno-5" class="rojo">
                                     <label for="uno-5-a">Rara vez se discute la retroalimentación del cliente.</label>
@@ -90,7 +138,7 @@
                                 <textarea name="uno-5-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>6. Voz del cliente - Responder a la retroalimentación</h4>
+                                <h4>1.6. Voz del cliente - Responder a la retroalimentación</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-6-a" name="uno-6" class="rojo">
                                     <label for="uno-6-a">Los equipos no están conscientes de los atributos de calidad esperados por el cliente del producto o servicio, del tiempo de entrega o del tiempo de respuesta como medición clave del servicio al cliente.</label>
@@ -102,7 +150,7 @@
                                 <textarea name="uno-6-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>7. Definición de metas y objetivos</h4>
+                                <h4>1.7. Definición de metas y objetivos</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-7-a" name="uno-7" class="rojo">
                                     <label for="uno-7-a">No existe una definición formal y consensuada por el primer nivel de dirección de los temas importantes a resolver alineadas con la visión de la empresa. Los objetivos priorizan el corto plazo y los resultados financieros en detrimento de la visión de largo plazo y creación de valor para el cliente y la organización.</label>
@@ -114,7 +162,7 @@
                                 <textarea name="uno-7-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>8. Alineamiento y despliegue</h4>
+                                <h4>1.8. Alineamiento y despliegue</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-8-a" name="uno-8" class="rojo">
                                     <label for="uno-8-a">No hay alineamiento y despliegue de las metas y objetivos clave de corto y largo plazo en los distintos niveles de la organización.</label>
@@ -126,7 +174,7 @@
                                 <textarea name="uno-8-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>9. Seguimiento</h4>
+                                <h4>1.9. Seguimiento</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="uno-9-a" name="uno-9" class="rojo">
                                     <label for="uno-9-a">No existen rutinas y mecanismos formales de seguimiento periódico del cumplimiento efectivo de los temas prioritarios que precisan ser trabajados.</label>
@@ -157,7 +205,7 @@
                                 <h3>2. Crear flujos de procesos continuos para evidenciar problemas</h3>
                             </div>
                             <div class="tema">
-                                <h4>1. Conciencia de flujos de valor sin desperdicios</h4>
+                                <h4>2.1. Conciencia de flujos de valor sin desperdicios</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-1-a" name="dos-1" class="rojo">
                                     <label for="dos-1-a">No se visualizan los principales flujos de valor actuales y sus restricciones y/o limitaciones no son claramente identificados. Funcionan con "lotes de producción" o "paquetes de trabajo" elevados, atados a liberaciones presupuestarias mensuales y con estructuras jerárquicas que actúan en silos para la toma de decisiones.</label>
@@ -169,7 +217,7 @@
                                 <textarea name="dos-1-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>2. Métricas</h4>
+                                <h4>2.2. Métricas</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-2-a" name="dos-2" class="rojo">
                                     <label for="dos-2-a">No existen indicadores clave que permitan medir y acompañar el desempeño de los principales flujos de valor punta a punta.</label>
@@ -181,7 +229,7 @@
                                 <textarea name="dos-2-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>3. Organización multifuncional</h4>
+                                <h4>2.3. Organización multifuncional</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-3-a" name="dos-3" class="rojo">
                                     <label for="dos-3-a">Los equipos de trabajo están organizados en grupos funcionales. Los equipos no tienen el control ni la propiedad de los procesos ni de los resultados al cliente "punta a punta". Existen controles fragmentados sin visión total del desempeño y del impacto que su resultado genera en el flujo aguas abajo. Los espacios de trabajo físicos no estimulan el trabajo en equipo eficazmente, la colaboración ni la solución de problemas.</label>
@@ -193,7 +241,7 @@
                                 <textarea name="dos-3-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>4. Eliminación de barreras y problemas del flujo</h4>
+                                <h4>2.4. Eliminación de barreras y problemas del flujo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-4-a" name="dos-4" class="rojo">
                                     <label for="dos-4-a">No existen acciones que permitan atacar las principales limitaciones y restricciones de los flujos de valor.</label>
@@ -205,7 +253,7 @@
                                 <textarea name="dos-4-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>5. Validación de los flujos de valor por los líderes</h4>
+                                <h4>2.5. Validación de los flujos de valor por los líderes</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-5-a" name="dos-5" class="rojo">
                                     <label for="dos-5-a">No existen rutinas para que los líderes puedan verificar el desempeño y cumplimiento de los flujos de valor.</label>
@@ -220,7 +268,7 @@
                                 <h3>3. Usar sistemas de procesos "pull" para evitar la sobreproducción</h3>
                             </div>
                             <div class="tema">
-                                <h4>6. Administración de la demanda y capacidad evitando la sobreproducción</h4>
+                                <h4>3.6. Administración de la demanda y capacidad evitando la sobreproducción</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-6-a" name="dos-6" class="rojo">
                                     <label for="dos-6-a">No existen mecanismos o herramientas que permitan regular el orden, la carga y ritmo de trabajo evitando la sobre carga o la ociosidad de los recursos.</label>
@@ -235,7 +283,7 @@
                                 <h3>4. Nivelar la carga de trabajo (Heijunka)</h3>
                             </div>
                             <div class="tema">
-                                <h4>7. Planificación diaria</h4>
+                                <h4>4.7. Planificación diaria</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-7-a" name="dos-7" class="rojo">
                                     <label for="dos-7-a">No se entiende la demanda o carga diaria de trabajos o tareas ni se equipara con la capacidad operativa diaria real.</label>
@@ -247,7 +295,7 @@
                                 <textarea name="dos-7-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>8. Capacidad de operativa</h4>
+                                <h4>4.8. Capacidad de operativa</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-8-a" name="dos-8" class="rojo">
                                     <label for="dos-8-a">No existen planes concretos para buscar  mejoras de capacidad operativa.</label>
@@ -262,7 +310,7 @@
                                 <h3>5. Generar una práctica y cultura de "parar" para resolver problemas y asegurar la calidad</h3>
                             </div>
                             <div class="tema">
-                                <h4>9. Calidad en el proceso</h4>
+                                <h4>5.9. Calidad en el proceso</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-9-a" name="dos-9" class="rojo">
                                     <label for="dos-9-a">No existen mecanismos de autocontrol ni cadenas de ayuda en los procesos y actividades que permitan identificar y resolver problemas de calidad para evitar pasarlos al proceso siguiente.</label>
@@ -277,7 +325,7 @@
                                 <h3>6. Estandarizar; base fundacional de la mejora continua y el empoderamiento de las personas</h3>
                             </div>
                             <div class="tema">
-                                <h4>10. Creación y actualización de los estándares de trabajo</h4>
+                                <h4>6.10. Creación y actualización de los estándares de trabajo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-10-a" name="dos-10" class="rojo">
                                     <label for="dos-10-a">Existen estándares de trabajo actualizados para menos del 50% de los procesos clave de las áreas de negocio. No existen responsabilidades claras para la actualización del trabajo estandarizado.</label>
@@ -289,7 +337,7 @@
                                 <textarea name="dos-10-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>11. Uso y gestión visual</h4>
+                                <h4>6.11. Uso y gestión visual</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-11-a" name="dos-11" class="rojo">
                                     <label for="dos-11-a">No se están utilizando los estándares de trabajo o no se encuentran disponibles para control visual en la propia área de trabajo.</label>
@@ -301,7 +349,7 @@
                                 <textarea name="dos-11-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>12. Ejercicio del liderazgo sobre el trabajo estandarizado</h4>
+                                <h4>6.12. Ejercicio del liderazgo sobre el trabajo estandarizado</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-12-a" name="dos-12" class="rojo">
                                     <label for="dos-12-a">No existen rutinas del Líder donde se confirme el trabajo estandarizado de los miembros de su equipo.  O existen pero no son puestas en práctica y los managers o jefes no velan por su cumplimiento.</label>
@@ -313,7 +361,7 @@
                                 <textarea name="dos-12-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>13. Mejora del trabajo estandarizado</h4>
+                                <h4>6.13. Mejora del trabajo estandarizado</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-13-a" name="dos-13" class="rojo">
                                     <label for="dos-13-a">No existen programas e iniciativas para la mejora o Kaizen del trabajo estandarizado dentro del equipo de trabajo.</label>
@@ -328,7 +376,7 @@
                                 <h3>7. Utilizar controles visuales para evidenciar los problemas</h3>
                             </div>
                             <div class="tema">
-                                <h4>14. 5S como condición esencial de la gestión visual</h4>
+                                <h4>7.14. 5S como condición esencial de la gestión visual</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-14-a" name="dos-14" class="rojo">
                                     <label for="dos-14-a">No existen estándares para mantener el área de trabajo de acuerdo con la aplicación de la herramienta 5S.</label>
@@ -340,7 +388,7 @@
                                 <textarea name="dos-14-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>15. Tableros / y herramientas de gestión visuales</h4>
+                                <h4>7.15. Tableros / y herramientas de gestión visuales</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-15-a" name="dos-15" class="rojo">
                                     <label for="dos-15-a">Las áreas de trabajo no cuentan con tableros o herramientas de gestión visual que permitan identificar desvíos de condiciones estándares o deseadas.</label>
@@ -352,7 +400,7 @@
                                 <textarea name="dos-15-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>16. Metas y KPIs visuales</h4>
+                                <h4>7.16. Metas y KPIs visuales</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-16-a" name="dos-16" class="rojo">
                                     <label for="dos-16-a">Las áreas de trabajo no cuentan con indicadores de desempeño desplegados visualmente con sus metas asociadas a los 5 ejes básicos de gestión de cualquier organización: (Calidad, Operación, Costos, Personas y Seguridad).</label>
@@ -367,7 +415,7 @@
                                 <h3>8. Recurrir únicamente tecnología confiable y correctamente testeada para servir a las personas y a los procesos</h3>
                             </div>
                             <div class="tema">
-                                <h4>17. Mejoras en sistemas y aplicativos vigentes</h4>
+                                <h4>8.17. Mejoras en sistemas y aplicativos vigentes</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-17-a" name="dos-17" class="rojo">
                                     <label for="dos-17-a">Las necesidades de mejora llegan por diferentes vías sin un modelo o estructura que permita justificar y clarificar la necesidad así como valorar el impacto de mejora que se desea alcanzar para el proceso. Las entregas y desarrollos se hacen de manera tardía y con un alto nivel de insatisfacción por los usuarios en relación con las funcionalidades y solución esperada.</label>
@@ -379,7 +427,7 @@
                                 <textarea name="dos-17-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>18. Decisiones de innovación tecnología</h4>
+                                <h4>8.18. Decisiones de innovación tecnología</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="dos-18-a" name="dos-18" class="rojo">
                                     <label for="dos-18-a">Las decisiones de innovación tecnológica no tiene un origen en una planificación y despliegue de objetivos y metas estratégicos que responden a necesidades de mejora e innovación del Negocio. Los desarrollos, entregas y puesta a prueba demoran plazos muy largos sin existir validación de avances y entregas por etapas de períodos cortos de tiempo. Hay un alto índice de cambios de alcance como consecuencia de la baja calidad del proceso.</label>
@@ -410,7 +458,7 @@
                                 <h3>9. Desarrollar líderes que entiendan el trabajo, vivan la filosofía y se la enseñen a otros</h3>
                             </div>
                             <div class="tema">
-                                <h4>1. Gestión de la rutina del trabajo diario desde el Gemba: agenda y cumplimiento</h4>
+                                <h4>9.1. Gestión de la rutina del trabajo diario desde el Gemba: agenda y cumplimiento</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-1-a" name="tres-1" class="rojo">
                                     <label for="tres-1-a">Existen reuniones de equipo pero no tienen una agenda clara y estructurada. Las reuniones de equipo no se realizan a diario.</label>
@@ -422,7 +470,7 @@
                                 <textarea name="tres-1-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>2. Gestión de la rutina del trabajo diario desde el Gemba: seguimiento de la operación / servicio</h4>
+                                <h4>9.2. Gestión de la rutina del trabajo diario desde el Gemba: seguimiento de la operación / servicio</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-2-a" name="tres-2" class="rojo">
                                     <label for="tres-2-a">No existe un acompañamiento durante la jornada con frecuencia periódica (horario, cada 2 o 4 horas) de la operación o servicio programados. </label>
@@ -442,7 +490,7 @@
                                 <textarea name="tres-2-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>3. Gestión de la rutina del trabajo diario desde el Gemba: participación de los miembros del equipo y líderes</h4>
+                                <h4>9.3. Gestión de la rutina del trabajo diario desde el Gemba: participación de los miembros del equipo y líderes</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-3-a" name="tres-3" class="rojo">
                                     <label for="tres-3-a">Hay poca interacción entre los participantes en las reuniones de equipo (por ej., son dominadas por el líder del equipo). Los colaboradores que trabajan de manera remota no participan en las discusiones.</label>
@@ -454,7 +502,7 @@
                                 <textarea name="tres-3-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>4. Gestión de la rutina del trabajo diario desde el Gemba: motivación y moral del equipo</h4>
+                                <h4>9.4. Gestión de la rutina del trabajo diario desde el Gemba: motivación y moral del equipo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-4-a" name="tres-4" class="rojo">
                                     <label for="tres-4-a"> El equipo no cuenta con un mecanismo (o no lo usa) para que afloren y se atiendan las preocupaciones de los miembros del equipo de manera regular.</label>
@@ -466,7 +514,7 @@
                                 <textarea name="tres-4-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>5. El líder como "Coach" de las rutinas de gestión del equipo desde el lugar de trabajo</h4>
+                                <h4>9.5. El líder como "Coach" de las rutinas de gestión del equipo desde el lugar de trabajo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-5-a" name="tres-5" class="rojo">
                                     <label for="tres-5-a">Los líderes no realizan coaching de manera estructurada regularmente para el desarrollo de los miembros del equipo.</label>
@@ -478,7 +526,7 @@
                                 <textarea name="tres-5-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>6. Resultados del coaching</h4>
+                                <h4>9.6. Resultados del coaching</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-6-a" name="tres-6" class="rojo">
                                     <label for="tres-6-a">El coaching realizado no demuestra mejora en el desempeño</label>
@@ -490,7 +538,7 @@
                                 <textarea name="tres-6-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>7. Seguimiento de rutinas de liderazgo como soporte al rol de Líder</h4>
+                                <h4>9.7. Seguimiento de rutinas de liderazgo como soporte al rol de Líder</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-7-a" name="tres-7" class="rojo">
                                     <label for="tres-7-a">Menos del 50% de los líderes de la organización cuenta o están siguiendo una agenda estructurada para el cumplimiento de su rol.</label>
@@ -505,7 +553,7 @@
                                 <h3>10. Desarrollar personas y equipos excepcionales que sigan la filosofía de su organización</h3>
                             </div>
                             <div class="tema">
-                                <h4>8. Matriz de competencias</h4>
+                                <h4>10.8. Matriz de competencias</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-8-a" name="tres-8" class="rojo">
                                     <label for="tres-8-a">Los distintos equipos de trabajo en la organización no cuentan con un modelo de evaluación de competencias y competencias para la posición  que ocupan que permita la validación de competencias en el puesto y generación de Programas de Desarrollo Individuales.</label>
@@ -517,7 +565,7 @@
                                 <textarea name="tres-8-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>9. Desarrollo de matriz de competencias del Líder</h4>
+                                <h4>10.9. Desarrollo de matriz de competencias del Líder</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-9-a" name="tres-9" class="rojo">
                                     <label for="tres-9-a">No existen matrices de competencias de liderazgo.</label>
@@ -529,7 +577,7 @@
                                 <textarea name="tres-9-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>10. Administración de competencias</h4>
+                                <h4>10.10. Administración de competencias</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-10-a" name="tres-10" class="rojo">
                                     <label for="tres-10-a">Las reuniones de equipo para seguimiento de la rutina diaria / semanal de trabajo no cubren los planes de desarrollo de competencias.</label>
@@ -541,7 +589,7 @@
                                 <textarea name="tres-10-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>11. Desarrollo de los miembros del equipo</h4>
+                                <h4>10.11. Desarrollo de los miembros del equipo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-11-a" name="tres-11" class="rojo">
                                     <label for="tres-11-a">No existen planes de desarrollo individual. No existen oportunidades de desarrollo individuales o no hay asistencia formal y estructurada.</label>
@@ -556,7 +604,7 @@
                                 <h3>11. Respetar a tu red de contratistas y proveedores desafiándolos y ayudándolos a mejorar</h3>
                             </div>
                             <div class="tema">
-                                <h4>12. Programas de mejora trabajando en equipo</h4>
+                                <h4>11.12. Programas de mejora trabajando en equipo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-12-a" name="tres-12" class="rojo">
                                     <label for="tres-12-a">No existen Programas ni iniciativas para el desarrollo de proveedores y empresas colaboradoras claves o críticas para el Negocio.</label>
@@ -568,7 +616,7 @@
                                 <textarea name="tres-12-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>13. Resultados y beneficios compartidos</h4>
+                                <h4>11.13. Resultados y beneficios compartidos</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="tres-13-a" name="tres-13" class="rojo">
                                     <label for="tres-13-a">Los resultados de las iniciativas de mejoras en las empresas colaboradoras o proveedoras no consiguen reflejar mejoras medibles que tenga impacto concreto en algunos de los 5 ejes básicos de gestión.</label>
@@ -599,7 +647,7 @@
                                 <h3>12. Ve y observa por ti mismo para comprender profundamente la situación (genchi genbutsu)</h3>
                             </div>
                             <div class="tema">
-                                <h4>1. Proceso estructurado de solución de problemas y capacitación</h4>
+                                <h4>12.1. Proceso estructurado de solución de problemas y capacitación</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-1-a" name="cuatro-1" class="rojo">
                                     <label for="cuatro-1-a">No existe una metodología clara de solución de problemas ni programas de entrenamiento y certificación de competencias de resolución de problemas para el personal.</label>
@@ -611,7 +659,7 @@
                                 <textarea name="cuatro-1-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>2. Ir y ver en el lugar de trabajo</h4>
+                                <h4>12.2. Ir y ver en el lugar de trabajo</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-2-a" name="cuatro-2" class="rojo">
                                     <label for="cuatro-2-a">Los líderes no visitan de manera regular (recorren) la primera línea para buscar aportes respecto a éxitos, problemas y soluciones para las metas clave de negocio.</label>
@@ -623,7 +671,7 @@
                                 <textarea name="cuatro-2-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>3. Identificación y priorización del problema</h4>
+                                <h4>12.3. Identificación y priorización del problema</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-3-a" name="cuatro-3" class="rojo">
                                     <label for="cuatro-3-a">Los problemas se identifican o capturan ocasionalmente de manera informal.</label>
@@ -635,7 +683,7 @@
                                 <textarea name="cuatro-3-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>4. Documentación de la resolución de problemas</h4>
+                                <h4>12.4. Documentación de la resolución de problemas</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-4-a" name="cuatro-4" class="rojo">
                                     <label for="cuatro-4-a">No existe un método para la registración y documentación de los pasos de la resolución de problemas. </label>
@@ -647,7 +695,7 @@
                                 <textarea name="cuatro-4-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>5. Describir y entender el problema</h4>
+                                <h4>12.5. Describir y entender el problema</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-5-a" name="cuatro-5" class="rojo">
                                     <label for="cuatro-5-a">No existe consenso absoluto sobre cual es el problema. El entendimiento del problema se basa en datos parciales o incompletos. No se recorre el proceso desde el Gemba para confirmar de primera mano. Se quiere pasar a la solución rápidamente sin clasificar y descomponer los datos para priorizar el foco.</label>
@@ -662,7 +710,7 @@
                                 <h3>13. Tomar decisiones por consenso, teniendo en cuenta todas las opciones (nemawashi), e implementar ágilmente</h3>
                             </div>
                             <div class="tema">
-                                <h4>6. Causas y contramedidas</h4>
+                                <h4>13.6. Causas y contramedidas</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-6-a" name="cuatro-6" class="rojo">
                                     <label for="cuatro-6-a">La identificación de causas no involucra a todas las personas necesarias del proceso. Las hipótesis no son confirmadas en el Gemba. Las contramedidas no son consensuadas formalmente y son definidas sin validar efectivamente una relación directa para la solución de las causas.</label>
@@ -674,7 +722,7 @@
                                 <textarea name="cuatro-6-comentario" rows="3" placeholder="Factores y características de la gestión actual"></textarea>
                             </div>
                             <div class="tema">
-                                <h4>7. Implementación, seguimiento y resultados</h4>
+                                <h4>13.7. Implementación, seguimiento y resultados</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-7-a" name="cuatro-7" class="rojo">
                                     <label for="cuatro-7-a">No se cumple con las contramedidas identificadas y los tiempos comprometidos. Se hacen cambios o ajustes individualmente sin comunicar al resto y entender el impacto de los mismos. Se siguen los resultados sólo cuando un líder reclama o pregunta.</label>
@@ -689,7 +737,7 @@
                                 <h3>14. Propiciar el proceso de convertirse en una organización que aprende a través de la reflexión (hansei) y la mejora continua (kaizen)</h3>
                             </div>
                             <div class="tema">
-                                <h4>8. Compartiendo las soluciones y sustentando los resultados</h4>
+                                <h4>14.8. Compartiendo las soluciones y sustentando los resultados</h4>
                                 <div class="comportamientos">
                                     <input type="radio" id="cuatro-8-a" name="cuatro-8" class="rojo">
                                     <label for="cuatro-8-a">Las soluciones a los problemas y mejoras capturadas no se comparten.</label>

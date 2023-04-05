@@ -12,6 +12,8 @@
     --clr-green: #25cd89;
     --clr-yellow: #ead365;
     --clr-red: #e04d4d;
+    
+    --clr-first-step: rgba(232, 98, 210, 0.25);
 
     --clr-modelo-1: rgba(125, 98, 232, 0.25);
     --clr-modelo-2: rgba(232, 98, 98, 0.25);
@@ -255,6 +257,97 @@ body {
     border: 1px solid var(--clr-black);
 }
 
+
+.first-step {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid var(--clr-gray-sec);
+    border-radius: 1rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2rem;
+    background-color: var(--clr-first-step);
+    gap: 2rem;
+}
+
+.first-step .izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.first-step .izquierda .dato {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.first-step input, .first-step textarea {
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-black);
+    border-radius: .5rem;
+    color: var(--clr-black);
+    padding: 1rem;
+    resize: none;
+}
+
+.first-step textarea  {
+    height: 100%;
+}
+
+.first-step .derecha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.first-step .derecha .dato {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.first-step label {
+    color: var(--clr-black);
+}
+
+.logos-flotantes {
+    z-index: 2;
+    padding-bottom: 2rem;
+    transition: .5s;
+}
+
+.logos-flotantes > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos-flotantes img {
+    max-width: 8rem;
+}
+
+.logos-flotantes.abajo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .75);
+    padding: 1rem;
+}
+
+
+.logos-flotantes.abajo .container {
+    padding-inline: 3rem;
+}
+
+.image-gestion {
+    border-radius: 1.5rem;
+}
+
+
 @media screen and (max-width: 768px) {
     body {
         padding-block: 2rem;
@@ -274,5 +367,15 @@ body {
 
     .principio h3 {
         font-size: 1rem;
+    }
+
+    .first-step {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-step .derecha {
+        display: flex;
+        flex-direction: column;
     }
 }

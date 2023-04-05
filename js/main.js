@@ -1,10 +1,9 @@
-const steps = document.querySelectorAll(".step");
+const logosFlotantes = document.getElementById('logos-flotantes');
 
-steps.forEach(step => {
-    step.addEventListener("click", () => {
-        steps.forEach(step => {
-            step.classList.remove("active");
-        });
-        step.classList.add("active");
-    })
-})
+window.addEventListener('scroll', () => {
+  if (window.scrollY > window.innerHeight * 0.2) {
+    logosFlotantes.classList.add('abajo');
+  } else {
+    logosFlotantes.classList.remove('abajo');
+  }
+});
